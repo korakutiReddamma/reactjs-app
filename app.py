@@ -17,7 +17,7 @@ def index():
                                    host='database-1.cglklhnjxwru.ap-southeast-1.rds.amazonaws.com',
                                    database='react_db')
     cursor = cnx.cursor()
-    query = "SELECT * FROM <tablename>"
+    query = "SELECT * FROM datajs"
     cursor.execute(query)
     rows = cursor.fetchall()
     cnx.close()
